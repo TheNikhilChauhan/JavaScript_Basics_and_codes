@@ -2,7 +2,7 @@
 
 // alert(4 + 5); // we are not using browser
 
-console.log(5 + 5);
+// console.log(5 + 5);
 
 /* datatypes
 number => 2 to the power 53
@@ -14,4 +14,15 @@ symbol => unique
 
 objects
 */
-console.log(typeof null);
+
+const num = 123;
+const str = "hello";
+const bool = true;
+let state;
+let country = null;
+
+console.log(num, typeof num);
+console.log(str, typeof str);
+console.log(bool, typeof bool);
+console.log(state, typeof state);
+console.log(country, typeof country);
