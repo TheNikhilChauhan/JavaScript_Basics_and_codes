@@ -1,7 +1,7 @@
 //Strings : these are immutable so all these methods doesn't actually change the string
 
-let firstName = "Awesome";
-let lastName = "Programmer";
+// let firstName = "Awesome";
+// let lastName = "Programmer";
 // console.log(firstName, lastName); // it provides inbuilt space between words
 
 //String Concatination
@@ -23,21 +23,21 @@ let lastName = "Programmer";
 // console.log(name[0]);
 
 //Getting strings character
-console.log(firstName[0]);
+// console.log(firstName[0]);
 
 //String Methods : methods returns the value
 // to upper case and indexof
 
-console.log(firstName.toUpperCase());
-console.log(lastName.indexOf("g"));
+// console.log(firstName.toUpperCase());
+// console.log(lastName.indexOf("g"));
 
 //trim method : it removes the extra space at the start and end of the string
-// let hobbies = "      Eat       Sleep Code Repeat      ";
+// let hobbies = "      Eat Sleep Code Repeat      ";
 // //the space will remain like this to remove the space we use trim
-//
+
 // let result = hobbies.trim();
-// console.log(hobbies);
-// console.log(result);
+// console.log("original:", hobbies);
+// console.log("trimmed:", result);
 
 // //to prove the trim is working
 // console.log(result.indexOf("E")); //0
@@ -50,16 +50,16 @@ console.log(lastName.indexOf("g"));
 // console.log(result.includes("Sleep"));
 
 //slice method
-let fullName = "ProgrammerCoder";
+// let fullName = "ProgrammerCoder";
 
-let result = fullName.slice(0, 5); // from index 0 to 4
-let result1 = fullName.slice(-14, 5);
+// let result = fullName.slice(0, 5); // from index 0 to 4
+// let result1 = fullName.slice(-14, 5);
 
-console.log("Original string = ", fullName);
-console.log("Sliced string = ", result);
-console.log("Sliced string = ", result1);
+// console.log("Original string = ", fullName);
+// console.log("Sliced string = ", result);
+// console.log("Sliced string = ", result1);
 
 // Split method
-// let colors = "Brown, Red, Green, Blue";
-// let arrColor = colors.split(",");
-// console.log(arrColor);
+let colors = "Brown, Red, Green, Blue";
+let arrColor = colors.split(",");
+console.log(arrColor);
