@@ -14,3 +14,4 @@ symbol => unique
 
 objects
 */
+console.log(typeof null);
