@@ -27,6 +27,7 @@ const user = {
 
 //modifying
 user.email = "harvey@gmail.com";
+user["age"] = 27;
 // Object.freeze(user); // can't make any changes now
 user.email = "harvey@microsoft.com";
 console.log(user.email);
