@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+}
+
+.container{
+    background: grey;
+    height:100%;
+    text-align: center;
+    margin: 25px;
+    padding: 20px;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+#weight, #height{
+    width: 200px;
+    height: 25px;
+    margin-top: 20px;
+}
+
+button{
+    width: 140px;
+    height: 25px;
+    margin: 25px;
+    border-radius: 25px;
+    font-size: medium;
+    font-weight: 600;
+    padding: 1px 20px;
+    cursor: pointer;
+}
+
+#weight-guide{
+    line-height: 40px;
+}
+
+#result{
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: aqua;
+}
