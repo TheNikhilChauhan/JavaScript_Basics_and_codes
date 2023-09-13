@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM: edit and remove elements</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const list = document.createElement('li')
+        list.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(list)
+// whole tree gets traversed in the document, as the no. of input 
+//increases or for large project this won't work
+    }
+    addLanguage('Python')
+    addLanguage('JAVA')
+
+    function addOptLanguage(langName){
+        const list = document.createElement('li')
+        list.appendChild(document.createTextNode(langName))
+        //it is more optimized incase of big project
+        document.querySelector('.language').appendChild(list)
+    }
+    addOptLanguage('GoLang')
+
+    //Edit value
+    const secondLang = document.querySelector('li:nth-child(2)')
+    // secondLang.innerHTML = 'Ruby'
+    const newList = document.createElement('li')
+    newList.textContent = 'Ruby'
+    secondLang.replaceWith(newList)
+
+    //edit
+    const firstLang = document.querySelector('li:first-child')
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+    //remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+</script>
+</html>
