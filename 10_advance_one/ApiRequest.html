@@ -1,0 +1,35 @@
+//AJAX , XMLHTTPRequest
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Request</title>
+    
+</head>
+<body style="background: black;">
+    <div id="container">
+        
+    </div>
+    
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/nIkHiLChn'
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET', requestUrl)
+    //to continuously monitor the state change
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            const data = JSON.parse(this.responseText)
+            // we get response in strings not in object
+            //JSON.parse() convert string into JSON
+            console.log(typeof data)
+            console.log(data.avatar_url)
+        }
+    }
+    
+    xhr.send()
+</script>
+</html>
